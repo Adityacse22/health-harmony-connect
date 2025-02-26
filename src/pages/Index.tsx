@@ -43,7 +43,7 @@ const Index = () => {
         <section className="relative overflow-hidden px-6 pt-16 md:pt-24 lg:pt-32">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col items-center text-center">
-              <h1 className="animate-fade-down text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="animate-fade-down text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                 Revolutionizing Healthcare Access in India
               </h1>
               <p className="animate-fade-up mt-6 text-lg leading-8 text-gray-600 max-w-2xl">
@@ -52,14 +52,14 @@ const Index = () => {
               </p>
               <div className="animate-fade-up mt-10 flex items-center gap-x-6">
                 <Button
-                  className="bg-primary hover:bg-primary-hover text-white px-8 py-6 text-lg"
+                  className="bg-primary hover:bg-primary-hover text-white px-8 py-6 text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   onClick={() => navigate("/diagnosis")}
                 >
                   Try AI Diagnosis
                 </Button>
                 <Button
                   variant="outline"
-                  className="px-8 py-6 text-lg"
+                  className="px-8 py-6 text-lg border-2 hover:border-primary hover:text-primary transition-all duration-300"
                   onClick={() => navigate("/appointments")}
                 >
                   Book Appointment
@@ -75,10 +75,10 @@ const Index = () => {
             {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="animate-slide-in relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md transition-shadow"
+                className="animate-slide-in relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white/50 backdrop-blur-sm"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-primary mb-4 text-2xl">{feature.icon}</div>
+                <div className="text-primary mb-4 text-3xl">{feature.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
@@ -88,9 +88,9 @@ const Index = () => {
 
         {/* Trust Section */}
         <section className="mx-auto max-w-7xl px-6 mt-24 sm:mt-32 mb-24">
-          <div className="rounded-3xl bg-secondary/30 px-8 py-16">
+          <div className="rounded-3xl bg-gradient-to-r from-secondary/30 via-secondary/50 to-secondary/30 px-8 py-16 transform hover:scale-[1.01] transition-transform duration-300">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Trusted by Healthcare Providers Across India
               </h2>
               <p className="mt-4 text-lg text-gray-600">
