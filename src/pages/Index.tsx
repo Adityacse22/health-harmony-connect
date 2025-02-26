@@ -8,6 +8,34 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-secondary/20">
+      {/* Background Pattern */}
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <svg
+          className="absolute h-full w-full opacity-[0.03]"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 400 400"
+        >
+          <g stroke="currentColor" strokeWidth="1">
+            <path d="M200 50a20 20 0 1 0 0-40 20 20 0 0 0 0 40z" />
+            <path d="M190 30h20M200 40v20" />
+            <circle cx="150" cy="100" r="15" />
+            <path d="M142 92l16 16M158 92l-16 16" />
+            <path d="M250 100a15 15 0 1 0 0-30 15 15 0 0 0 0 30z" />
+            <path d="M243 85h15M250 78v15" />
+            <circle cx="100" cy="200" r="25" />
+            <path d="M85 185l30 30M115 185l-30 30" />
+            <circle cx="300" cy="200" r="20" />
+            <path d="M290 190h20M300 180v20" />
+            <path d="M150 300a18 18 0 1 0 0-36 18 18 0 0 0 0 36z" />
+            <path d="M142 282h16M150 274v16" />
+            <circle cx="250" cy="300" r="22" />
+            <path d="M235 285l30 30M265 285l-30 30" />
+          </g>
+        </svg>
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent" />
+      </div>
+
       <Navbar />
       
       <main className="pt-16">
