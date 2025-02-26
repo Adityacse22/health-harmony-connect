@@ -103,21 +103,21 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200">
+      <footer className="bg-black">
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between">
           <div className="text-center md:text-left">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-400">
               &copy; {new Date().getFullYear()} Health Sync. All rights reserved.
             </p>
           </div>
           <div className="mt-4 flex justify-center md:mt-0">
-            <Button variant="link" className="text-sm text-gray-500 hover:text-primary">
+            <Button variant="link" className="text-sm text-gray-400 hover:text-white">
               Privacy Policy
             </Button>
-            <Button variant="link" className="text-sm text-gray-500 hover:text-primary">
+            <Button variant="link" className="text-sm text-gray-400 hover:text-white">
               Terms of Service
             </Button>
-            <Button variant="link" className="text-sm text-gray-500 hover:text-primary">
+            <Button variant="link" className="text-sm text-gray-400 hover:text-white">
               Contact
             </Button>
           </div>
